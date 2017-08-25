@@ -1,0 +1,108 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+	background-image: url(../../assets/img/backgroundAccueil.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+
+h1
+{
+  font-family: Ribbons;
+  color:#748700;
+  text-align: center;
+  margin-top: 200px;
+  text-shadow: #637D8C 1px 1px, #637D8C -1px 1px, #637D8C -1px -1px, #637D8C 1px -1px;
+	font-size: 70px;
+}
+
+p{
+  color: red
+}
+
+@font-face {
+    font-family: 'justtell';
+    src: url('font/justtell.otf');
+}
+
+@font-face {
+    font-family: 'Ribbons';
+    src: url('Ribbons.ttf');
+}
+
+
+.monMenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+#menu-demo2, ul{
+padding:0;
+margin:0;
+list-style:none;
+
+}
+
+#menu-demo2 li{
+display:inline-block;
+position:relative;
+border-radius:8px 8px 0 0;
+background-color:#283F51;
+border-color: black;
+margin-top: 200px;
+}
+
+#menu-demo2 ul li{
+display:inherit;
+border-radius:0;
+
+}
+#menu-demo2 ul li:hover{
+border-radius:0;
+}
+
+#menu-demo2 ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s;
+
+}
+#menu-demo2 li:hover ul{
+max-height:15em;
+background:##748700;
+}
+
+/* background des liens menus et sous menus au survol */
+#menu-demo2 li:first-child:hover{
+background:#748700;
+}
+/* les a href */
+#menu-demo2 a{
+text-decoration:none;
+display:block;
+padding:8px 32px;
+color:#748700;
+font-family: ribbons;
+}
+#menu-demo2 ul a{
+padding:8px 0;
+}
+#menu-demo2 li:hover li a{
+text-transform:inherit;
+}
+#menu-demo2 li:hover a, #menu-demo2 li li:hover a{
+color:#283F51;
+}*/

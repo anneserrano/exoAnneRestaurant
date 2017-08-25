@@ -1,16 +1,3 @@
-<?php
-session_start();
-$_SESSION['nom']=$_POST['nom'];
-print_r($_SESSION);
-
-
-$id_plat = $_POST['plat'];
-$nom = $_POST['nom'];
-$prix = $_POST['prix'];
-
-
-$_SESSION['admin'] = true;
-?>
 
 <!DOCTYPE html>
 <html>
@@ -23,6 +10,7 @@ $_SESSION['admin'] = true;
     <div class="container">
       <div class="categorieMenu">
 
+
         <?php
              if(!empty($_POST['id_plat'])){
              echo $_POST['id_plat'];
@@ -30,7 +18,11 @@ $_SESSION['admin'] = true;
              echo 'Remplir ce champ';
              }
          ?>
+
+
 </br>
+
+<input type="text" name="nom" value="">
       <?php
           if(!empty($_POST['nom'])){
           echo $_POST['nom'];
@@ -38,7 +30,11 @@ $_SESSION['admin'] = true;
           echo 'Remplir ce champ';
           }
         ?>
+</input>
+
 </br>
+
+<input type="text" name="prix" value="">
         <?php
             if(!empty($_POST['prix'])){
             echo $_POST['prix'];
@@ -46,6 +42,9 @@ $_SESSION['admin'] = true;
             echo 'Remplir ce champ';
             }
           ?>
+</input>
+
+  <input type="submit" name="button" value="submit">
 
         </div>
       </div>

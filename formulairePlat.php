@@ -1,38 +1,36 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>FORMULAIRE PLATS</title>
-    <link rel="stylesheet" href="plat.css" />
-  </head>
-  <body>
+<?php
+include("./includes/header.php")
+?>
 
-<h2>PLATS</h2>
+
+<h1>CRÉEZ VOS PLATS</h1>
+
+<h3>Compléter toutes les rubriques et valider</h3>
 
   <form action="traitementPlat.php" method="post" >
 
     <p>
-        <label for='nom'>NOM :</label>
+        <label for='nom'>Nom du plat :</label>
         <input type="text" name="nom" id="nom" />
     </p>
       <br />
   <br />
       <p>
-          <label for='prix'>PRIX :</label>
+          <label for='prix'>Son prix :</label>
           <input type="text" name="prix" id="prix" />
       </p>
         <br />
 
       <br />
     <p>
-        <label for="image">IMAGE :</label>
-        <input type="text" name="image" id="image" />
+        <label for="image">L'image correspondante :</label>
+        <input type="file" name="image" id="image" />
     </p>
       <br />
 
       <input type="submit" name="button" value="submit">
 
 </form>
-
-</body>
-</html>
+<?php
+include("./includes/footer.php")
+?>

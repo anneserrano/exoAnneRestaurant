@@ -22,6 +22,7 @@ $req->execute(array(
     'image' => $image,
 
     ));
-header("location: creationPlat.php");
+
+header("location: affichagePlats.php");
 
 ?>

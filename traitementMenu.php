@@ -3,29 +3,23 @@ session_start();
 $_SESSION['nom']=$_POST['nom'];
 print_r($_SESSION);
 
-$id_plat = $_POST['plat'];
 $nom = $_POST['nom'];
 $prix = $_POST['prix'];
-
 
 $_SESSION['admin'] = true;
 
 include("./config/connections.php");
 
-$req = $bdd->prepare('INSERT INTO menu(nom,prix,id_plat) VALUES(:nom,:prix,:id_plat)');
+$req = $bdd->prepare('INSERT INTO menu(nom,prix) VALUES(:nom,:prix)');
 
 $req->execute(array(
-
-
-
-    'id_plat' => $id_plat,
-
     'nom' => $nom,
-
     'prix' => $prix,
+  ));
+//on recupère le dernier ID rentré en base
+$id_menu=$bdd->lastInsertId();
 
-    ));
 
-header("location: creationMenu.php");
 
+header("location: formulaireMenu2.php?id=".$id_menu);
 ?>

@@ -1,0 +1,15 @@
+﻿				Exercice : Le Restaurant
+
+Je dois créer pour un client une application ayant pour fonctions: 
+
+- la création des plats du restaurant avec l'aide d'un formulaire, ce dernier permet d'alimenter une base de donnée dans laquelle on va pouvoir aller se servir pour la suite. Les informations pour tous les plats sont le nom, le prix et une image, ce sont les champs de la table PLAT + le champ ID.
+
+- La création de Menus, toujours à l'aide d'un formulaire, nous allons pouvoir composer les différents menus de la carte en choisissant dans la base de données, représentée ici par une checkbox avec tous les plats, et lui attribuer un nom et un prix, ce sont les champs de ma table Menu avec ID en plus.
+
+- Quand les menus sont crées, on peut les afficher ainsi que les plats sur la page du restaurant afin que les clients qui le souhaitent puissent faire leur choix en ligne.
+
+Cette application permet d'ajouter,supprimer et modifier les plats et les menus.
+
+Elle est responsive pour permettre aux clients de la consulter depuis leur portable.
+
+Pour le restaurateur, il doit se connecter à l'aide de ton adresse mail et d'un mot de passe pour avoir accès aux pages d'ajout des plats et menus.

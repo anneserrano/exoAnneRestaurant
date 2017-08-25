@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>FORMULAIRE MENU</title>
-    <link rel="stylesheet" href="menu.css" />
-  </head>
+<?php
+include("./includes/header.php")
+?>
+
   <body>
 
-<h2>MENUS</h2>
+<h1>CRÉEZ VOS MENUS</h1>
 
   <form action="traitementMenu.php" method="post" >
 
@@ -19,16 +16,7 @@
     $donnees = $reponse->fetchAll();
      ?>
 
-        <select name="plat" size="1" id="id_plat">
-        <option value="">SELECTION PLAT</option>
-        <?php
-        foreach ($donnees as $value){
-            echo "<option value='".$value['id']."'>".$value['nom']."</option>" ;
-        }
-        ?>
-        </select>
-
- <br />
+    <br />
 
     <p>
         <label for='nom'>NOM :</label>
@@ -46,5 +34,8 @@
 
 </form>
 
+<?php
+include("./includes/footer.php")
+?>
 </body>
 </html>
